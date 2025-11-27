@@ -1,0 +1,100 @@
+/* Definições globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Usando uma fonte sans-serif comum */
+}
+
+/* Corpo da página - Fundo Azul */
+body {
+    background-color: #7b80e4; /* Cor de fundo azul claro/lavanda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contêiner principal para centralizar a caixa de login */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Limita a largura do container */
+    padding: 20px;
+}
+
+/* Caixa de Login (Painel Branco/Claro) */
+.login-box {
+    background-color: #f7f7ff; /* Fundo muito claro, quase branco */
+    padding: 40px 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Título (SENAI) */
+.logo {
+    font-family: 'Arial Black', sans-serif; /* Tentando simular a fonte */
+    font-size: 30px;
+    color: #2c2c2c; /* Cor escura */
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Grupo de Input (Label + Campo) */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Label do Campo */
+.input-group label {
+    display: block;
+    font-size: 10px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Campo de Input */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    /* Ajuste para replicar o placeholder (adm@adm.com) */
+    text-align: left;
+}
+/* Estilo para o placeholder/valor preenchido */
+.input-group input[placeholder] {
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+/* Botão ENTRAR */
+.btn-entrar {
+    width: 100%;
+    padding: 10px;
+    background-color: #6699ff; /* Cor azul para o botão */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse */
+.btn-entrar:hover {
+    background-color: #4a7fd6;
+}
