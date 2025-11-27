@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula de Alunos - SENAI</title>
+    <link rel="stylesheet" href="matricula-aluno.css"> </head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h1 class="logo">SENAI</h1>
+                <p class="subtitle">SISTEMAS DE GERENCIAMENTO</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="icon">🏠</span> 
+                    EQUIPAMENTOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📚</span> 
+                    SALAS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">👤</span> 
+                    ALUNOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">🎓</span> 
+                    TURMAS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item sub-item active-sub">
+                    Matricular Aluno
+                </a>
+            </nav>
+
+            <div class="user-info">
+                <span>Oi, Leonardo</span>
+                <span class="logout-icon">→</span>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <header class="content-header">
+                <a href="#" class="return-link">
+                    ← Retornar para a gestão de turmas
+                </a>
+            </header>
+            
+            <h2 class="page-title">Matrícula de Aluno em Turma</h2>
+
+            <div class="form-box">
+                <form action="#" method="POST">
+                    
+                    <div class="form-row">
+                        <div class="input-group wide-2-3">
+                            <label for="aluno">Aluno (Apenas ativos)</label>
+                            <select id="aluno" name="aluno" required>
+                                <option value="" disabled selected>Selecione um aluno (Ex: Maria Silva - CPF: 000.***-**)</option>
+                                <option value="1">Aluno Ativo 1 (CPF: 111)</option>
+                                <option value="2">Aluno Ativo 2 (CPF: 222)</option>
+                                <option value="3" disabled>Aluno Inativo 3 (CPF: 333) - Regra: Não pode matricular</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group wide-1-3">
+                            <label for="dataMatricula">Data de Matrícula</label>
+                            <input type="date" id="dataMatricula" name="dataMatricula" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="turma">Turma</label>
+                        <select id="turma" name="turma" required>
+                            <option value="" disabled selected>Selecione uma turma (Ex: DDS-7 - 3 vagas restantes)</option>
+                            <option value="1">DDS-7 (3 vagas restantes)</option>
+                            <option value="2" disabled>INET-01 (Turma Cheia) - Regra: Não permitir</option>
+                            <option value="3">TELET-10 (20 vagas restantes)</option>
+                        </select>
+                    </div>
+
+                    <div class="dados-aluno-section">
+                        <p class="section-title">Dados do Aluno Selecionado (Exibição Automática)</p>
+                        <div class="form-row">
+                            <div class="input-group half-width">
+                                <label for="emailAluno">E-mail</label>
+                                <input type="email" id="emailAluno" value="maria.silva@exemplo.com" disabled>
+                            </div>
+                            <div class="input-group half-width">
+                                <label for="telefoneAluno">Telefone</label>
+                                <input type="tel" id="telefoneAluno" value="(11) 98765-4321" disabled>
+                            </div>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="enderecoAluno">Endereço</label>
+                            <input type="text" id="enderecoAluno" value="Rua das Flores, 100 - Centro, SP" disabled>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-salvar">MATRICULAR</button>
+                    <p class="regra-note">⚠️ **Regras:** Aluno inativo não pode ser selecionado. Não pode matricular em turma cheia. Validação de duplicidade é feita ao clicar em Matricular.</p>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
