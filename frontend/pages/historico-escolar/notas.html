@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Escolar - SENAI</title>
+    <link rel="stylesheet" href="notas.css"> </head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h1 class="logo">SENAI</h1>
+                <p class="subtitle">SISTEMAS DE GERENCIAMENTO</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="icon"></span> 
+                    EQUIPAMENTOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon"></span> 
+                    SALAS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon"></span> 
+                    ALUNOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">🎓</span> 
+                    TURMAS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item sub-item active-sub">
+                    Histórico Escolar
+                </a>
+            </nav>
+
+            <div class="user-info">
+                <span>Oi, Leonardo</span>
+                <span class="logout-icon">→</span>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <header class="content-header">
+                <a href="#" class="return-link">
+                    ← Retornar para o painel
+                </a>
+            </header>
+            
+            <h2 class="page-title">Histórico Escolar / Notas</h2>
+
+            <div class="form-box selection-box">
+                <form action="#" method="GET">
+                    <div class="form-row">
+                        <div class="input-group wide-2-3">
+                            <label for="alunoHistorico">Selecione o Aluno</label>
+                            <select id="alunoHistorico" name="alunoHistorico" required>
+                                <option value="" disabled selected>Selecione o aluno para visualizar o histórico</option>
+                                <option value="1">Maria Silva (Matrícula: 12345)</option>
+                                <option value="2">João Santos (Matrícula: 67890)</option>
+                                <option value="3">Lucas Ferreira (Matrícula: 11223)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group wide-1-3 action-button-group">
+                            <label>&nbsp;</label> <button type="submit" class="btn-visualizar">VISUALIZAR HISTÓRICO</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <h3 class="section-subtitle">Histórico de Turmas e Desempenho</h3>
+            <div class="form-box historico-box">
+                
+                <div class="aluno-info-header">
+                    <p>Aluno: <strong>Maria Silva</strong> | Situação Atual: **Ativo**</p>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Turma / Curso</th>
+                            <th>Nota Final (0-10)</th>
+                            <th>Frequência (0%-100%)</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DDS-7 (Técnico em Sistemas)</td>
+                            <td data-label="Nota Final">9.5</td>
+                            <td data-label="Frequência">95%</td>
+                            <td data-label="Situação" class="status status-aprovado">APROVADO</td>
+                        </tr>
+                        <tr>
+                            <td>INET-01 (Redes de Computadores)</td>
+                            <td data-label="Nota Final">4.8</td>
+                            <td data-label="Frequência">65%</td>
+                            <td data-label="Situação" class="status status-reprovado">REPROVADO</td>
+                        </tr>
+                        <tr>
+                            <td>TELET-10 (Eletrotécnica)</td>
+                            <td data-label="Nota Final">--</td>
+                            <td data-label="Frequência">88%</td>
+                            <td data-label="Situação" class="status status-cursando">CURSANDO</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="regra-note">ⓘ **Regras de Visualização:** Notas entre 0 e 10. Frequência entre 0% e 100%. A situação é determinada automaticamente pelo sistema (simulada na tabela).</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
