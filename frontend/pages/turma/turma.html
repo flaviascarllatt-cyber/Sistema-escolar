@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Turmas - SENAI</title>
+    <link rel="stylesheet" href="styles_turma.css"> </head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h1 class="logo">SENAI</h1>
+                <p class="subtitle">SISTEMAS DE GERENCIAMENTO</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="icon">🏠</span> 
+                    EQUIPAMENTOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">📚</span> 
+                    SALAS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item sub-item">
+                    Visualizar todas as salas
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">👤</span> 
+                    ALUNOS <span class="arrow">↓</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">🎓</span> 
+                    TURMAS <span class="arrow">↓</span>
+                </a>
+                 <a href="#" class="nav-item sub-item active-sub">
+                    Cadastrar Nova Turma
+                </a>
+            </nav>
+
+            <div class="user-info">
+                <span>Oi, Leonardo</span>
+                <span class="logout-icon">→</span>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <header class="content-header">
+                <a href="#" class="return-link">
+                    ← Retornar para todas as turmas
+                </a>
+            </header>
+            
+            <h2 class="page-title">Cadastro de Turma</h2>
+
+            <div class="form-box">
+                <form action="#" method="POST">
+                    
+                    <div class="input-group full-width">
+                        <label for="nomeTurma">Nome/Identificação da Turma (Ex.: DDS-7)</label>
+                        <input type="text" id="nomeTurma" name="nomeTurma" placeholder="Digite a identificação da turma (Ex: INET-01)" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="curso">Curso</label>
+                        <select id="curso" name="curso" required>
+                            <option value="" disabled selected>Selecione o curso</option>
+                            <option value="TADS">Técnico em Análise e Desenvolvimento de Sistemas</option>
+                            <option value="TELET">Técnico em Eletrotécnica</option>
+                            <option value="TADM">Técnico em Administração</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group third-width">
+                            <label for="turno">Turno</label>
+                             <select id="turno" name="turno" required>
+                                <option value="matutino">Matutino</option>
+                                <option value="vespertino">Vespertino</option>
+                                <option value="noturno">Noturno</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group third-width">
+                            <label for="periodo">Ano/Semestre</label>
+                            <input type="text" id="periodo" name="periodo" placeholder="Ex: 2025/1" required>
+                        </div>
+                        
+                        <div class="input-group third-width">
+                            <label for="vagas">Quantidade máxima de vagas</label>
+                            <input type="number" id="vagas" name="vagas" placeholder="50" min="1" required>
+                            </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-salvar">SALVAR</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
